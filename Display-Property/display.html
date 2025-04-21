@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Display Property Explained</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Display Property Explained</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>1. <code>display: block</code></h2>
+      <p>Block elements start on a new line and take up the full width.</p>
+      <div class="display-row block-example">
+        <div class="box">Block 1</div>
+        <div class="box">Block 2</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2. <code>display: inline</code></h2>
+      <p>Inline elements do not start on a new line and only take necessary width.</p>
+      <div class="display-row inline-example">
+        <div class="box">Inline 1</div>
+        <div class="box">Inline 2</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>3. <code>display: inline-block</code></h2>
+      <p>Inline-block allows setting width and height, and still flows inline.</p>
+      <div class="display-row inline-block-example">
+        <div class="box">IB 1</div>
+        <div class="box">IB 2</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>4. <code>display: none</code></h2>
+      <p>The element is hidden and removed from layout.</p>
+      <div class="display-row none-example">
+        <div class="box">Visible</div>
+        <div class="box">Hidden</div>
+      </div>
+      <p>(Only one box is visible here.)</p>
+    </div>
+
+    <div class="card">
+      <h2>5. <code>display: flex</code></h2>
+      <p>Flex makes a container flexible to arrange items in rows/columns.</p>
+      <div class="flex-example">
+        <div class="box">Flex 1</div>
+        <div class="box">Flex 2</div>
+        <div class="box">Flex 3</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Display Tutorial. All rights reserved.</p>
+  </footer>
+</body>
+</html>
