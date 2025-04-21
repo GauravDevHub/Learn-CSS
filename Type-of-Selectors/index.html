@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of CSS Selectors</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Types of CSS Selectors</h1>
+  </header>
+
+  <section>
+    <h2>What is a CSS Selector?</h2>
+    <p><strong>CSS Selectors</strong> are patterns used to select and style HTML elements. With selectors, you can define which elements you want to apply your styles to. There are several types of selectors based on how they target the elements.</p>
+  </section>
+
+  <section>
+    <h2>1. Universal Selector</h2>
+    <p>The universal selector <code>*</code> targets all elements in the document. It is useful for applying global styles.</p>
+    <div class="example-box">
+      <p>This text is styled by the <code>*</code> (universal) selector, which applies a global font family to all elements.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Type Selector</h2>
+    <p>A type selector targets all elements of a specific type (tag name). For example, <code>p</code> targets all paragraph elements.</p>
+    <div class="example-box">
+      <p>This text is styled by the <code>p</code> (type) selector, affecting all paragraph elements.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Class Selector</h2>
+    <p>The class selector <code>.<em>classname</em></code> targets elements with a specific class attribute. It’s reusable and can be applied to multiple elements.</p>
+    <div class="example-box">
+      <p class="highlight">This text is styled by the <code>.highlight</code> (class) selector, targeting elements with the class <code>highlight</code>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. ID Selector</h2>
+    <p>The ID selector <code>#idname</code> targets a specific element with the given ID. It is unique and can be applied only once per page.</p>
+    <div class="example-box" id="unique">
+      This text is styled by the <code>#unique</code> (ID) selector, targeting the element with the ID <code>unique</code>.
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Attribute Selector</h2>
+    <p>Attribute selectors target elements based on their attributes. For example, <code>input[type="text"]</code> targets all text input fields.</p>
+    <div class="example-box">
+      <input type="text" placeholder="This is a text input" />
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Pseudo-classes</h2>
+    <p>Pseudo-classes target elements in specific states, such as <code>:hover</code> for when an element is hovered over.</p>
+    <div class="example-box">
+      <a href="#" class="cta-button">Hover over me!</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Pseudo-elements</h2>
+    <p>Pseudo-elements allow you to style a specific part of an element, such as the first letter or the first line. For example, <code>::first-letter</code> can be used to style the first letter of a paragraph.</p>
+    <div class="example-box">
+      <p>This text uses the <code>::first-letter</code> pseudo-element to style the first letter.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CSS Tutorial - Types of CSS Selectors</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model Explained</h1>
+  </header>
+
+  <main>
+    <div class="box-model-container">
+      <h2>What is the CSS Box Model?</h2>
+      <p>The CSS box model is a fundamental concept that defines how elements are displayed and how space is calculated on a webpage. Every element is considered as a rectangular box made up of:</p>
+      <ul>
+        <li><strong>Content</strong> - The actual content of the element (text, image, etc.)</li>
+        <li><strong>Padding</strong> - Space between the content and the border</li>
+        <li><strong>Border</strong> - A border that wraps the content and padding</li>
+        <li><strong>Margin</strong> - Space outside the border, separating the element from others</li>
+      </ul>
+
+      <div class="info">
+        <strong>Tip:</strong> Total element width = <code>content + padding + border + margin</code>. Use <code>box-sizing: border-box</code> to include padding and border inside the width.
+      </div>
+
+      <div class="box-model-demo-wrapper">
+        <div class="margin-layer">
+          <div class="border-layer">
+            <div class="padding-layer">
+              <div class="content-layer">
+                This is content
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="legend">
+          <span class="margin">Margin</span>
+          <span class="border">Border</span>
+          <span class="padding">Padding</span>
+          <span class="content">Content</span>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

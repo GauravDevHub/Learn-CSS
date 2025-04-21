@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>What is CSS?</h1>
+  </header>
+
+  <section>
+    <p><strong>CSS (Cascading Style Sheets)</strong> is a style sheet language used to describe the presentation (look and feel) of a document written in HTML or XML. CSS controls the layout, design, colors, fonts, and overall appearance of a webpage. It enables web developers to create visually appealing and consistent user interfaces.</p>
+  </section>
+
+  <section>
+    <h2>1. Inline CSS</h2>
+    <p>Inline CSS is used to apply styles directly to HTML elements using the <code>style</code> attribute. It affects only that specific element and is useful for quick styling of single elements.</p>
+    <div class="example-box" style="background-color: #ffeb3b;">
+      This is an example of <strong>Inline CSS</strong>. The background color is applied directly using the <code>style</code> attribute.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Internal CSS</h2>
+    <p>Internal CSS is written within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of an HTML document. It is used to style the entire page and affects all elements within that document.</p>
+    <div class="example-box">
+      This is an example of <strong>Internal CSS</strong>. The styling is applied from the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.
+    </div>
+  </section>
+
+  <section>
+    <h2>3. External CSS</h2>
+    <p>External CSS is written in a separate .css file and linked to the HTML document using the <code>&lt;link&gt;</code> tag. This method is ideal for styling multiple pages consistently across a website.</p>
+    <div class="example-box">
+      This is an example of <strong>External CSS</strong>. The styling comes from an external stylesheet (not shown here, but linked via the <code>&lt;link&gt;</code> tag).
+    </div>
+    <!-- <a href="#" class="cta-button">Learn More About External CSS</a> -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CSS Tutorial - Understanding CSS Types</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Position Properties - Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Position Properties Explained with Live Examples</h1>
+  </header>
+
+  <main>
+    <div class="main-heading">
+      <p>Understand how different <strong>CSS position</strong> values work with visual demonstrations and simple explanations.</p>
+    </div>
+
+    <section>
+      <h2>1. position: static (default)</h2>
+      <div class="box static-box">Static Box</div>
+      <p><strong>Static</strong> is the default position for all elements. It follows the normal document flow and doesn't respond to top/left/right/bottom values.</p>
+    </section>
+
+    <section>
+      <h2>2. position: relative</h2>
+      <div class="box relative-box">Relative Box</div>
+      <p><strong>Relative</strong> positioning shifts the element from its normal position, but it still occupies its original space in the flow.</p>
+    </section>
+
+    <section>
+      <h2>3. position: absolute</h2>
+      <div class="container">
+        <div class="box absolute-box">Absolute Box</div>
+        <p>This <strong>absolute</strong> box is placed inside a <strong>relative</strong> container. It is positioned using top/right/left/bottom values from the nearest ancestor that is not static.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. position: fixed</h2>
+      <div class="box fixed-box">Fixed Box</div>
+      <p><strong>Fixed</strong> elements stay in place relative to the viewport, even when scrolling the page. This is often used for sticky navigation or action buttons.</p>
+    </section>
+
+    <section>
+      <h2>5. position: sticky</h2>
+      <div class="box sticky-box">Sticky Box</div>
+      <p><strong>Sticky</strong> positioning toggles between relative and fixed depending on scroll position. It sticks to the top when scrolling past it.</p>
+    </section>
+
+    <div class="spacer"></div>
+  </main>
+
+</body>
+</html>
