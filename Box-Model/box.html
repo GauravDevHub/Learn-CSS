@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CSS Box Model Explained</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,23 +14,35 @@
   <main>
     <div class="box-model-container">
       <h2>What is the CSS Box Model?</h2>
-      <p>The CSS box model is a fundamental concept that defines how elements are displayed and how space is calculated on a webpage. Every element is considered as a rectangular box made up of:</p>
-      <ul>
-        <li><strong>Content</strong> - The actual content of the element (text, image, etc.)</li>
-        <li><strong>Padding</strong> - Space between the content and the border</li>
-        <li><strong>Border</strong> - A border that wraps the content and padding</li>
-        <li><strong>Margin</strong> - Space outside the border, separating the element from others</li>
-      </ul>
+      <p>The CSS box model defines how the size of an element is calculated using <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
 
       <div class="info">
-        <strong>Tip:</strong> Total element width = <code>content + padding + border + margin</code>. Use <code>box-sizing: border-box</code> to include padding and border inside the width.
+        <strong>Tip:</strong> Use <code>box-sizing: border-box</code> to include padding and border in the total width/height.
+      </div>
+
+      <div class="controls">
+        <label>Padding:
+          <input type="range" id="paddingControl" min="0" max="100" value="20"> <span id="paddingValue">20px</span>
+        </label>
+        <label>Margin:
+          <input type="range" id="marginControl" min="0" max="100" value="20"> <span id="marginValue">20px</span>
+        </label>
+        <label>Border:
+          <input type="range" id="borderControl" min="0" max="50" value="10"> <span id="borderValue">10px</span>
+        </label>
+        <label>Box-Sizing:
+          <select id="boxSizingControl">
+            <option value="content-box">content-box</option>
+            <option value="border-box" selected>border-box</option>
+          </select>
+        </label>
       </div>
 
       <div class="box-model-demo-wrapper">
-        <div class="margin-layer">
-          <div class="border-layer">
-            <div class="padding-layer">
-              <div class="content-layer">
+        <div class="margin-layer" id="marginBox">
+          <div class="border-layer" id="borderBox">
+            <div class="padding-layer" id="paddingBox">
+              <div class="content-layer" id="demoBox">
                 This is content
               </div>
             </div>
@@ -46,8 +58,10 @@
       </div>
     </div>
   </main>
+
   <footer>
     <p>&copy; 2025 CSS Tutorial - Understanding CSS Types</p>
   </footer>
+  <script src="script.js"></script> 
 </body>
 </html>
